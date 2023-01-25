@@ -1,4 +1,4 @@
-package com.example.tsetapp.ui
+package com.example.testapp.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

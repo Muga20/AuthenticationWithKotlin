@@ -6,47 +6,34 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <LinearLayout
-        android:id="@+id/main_layout"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:gravity="center"
-        android:padding="25dp"
-        android:background="#444444">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="25dp"
-            android:textColor="#6dffbf"
-            android:padding="30dp"
-            android:text="Login Screen"/>
-        <EditText
+        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/username"
-            android:hint="User Name"
-            android:textColor="#6bff7"
-            android:textColorHint="#52afaa"
-            android:textAlignment="center"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="text"/>
-        <EditText
-            android:id="@+id/password"
-            android:hint="Password"
-            android:textColor="#6bff7"
-            android:textColorHint="#52afaa"
-            android:textAlignment="center"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textPassword"/>
-        <Button
-            android:id="@+id/btn_login"
-            android:text="Login"
-            android:textAllCaps="false"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:hint="Username"
+            app:endIconMode="clear_text"
+            app:layout_constrain_Bottom_toBottomof="parent"
+            app:layout_constraintEnd_toEndof="parent"
+            app:layout_constrainedHeight_percent="0.1"
+            app:layout_constraintStart_toStartoF="parent"
+            app:layout_constraintVertical_bias="0.4"
+            app:layout_constraintWidth_percent="0.9"
 
-    </LinearLayout>
+            >
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/add_username"
+                android:maxLength="20"
+                />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
 
 
 
